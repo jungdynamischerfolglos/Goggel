@@ -20,10 +20,4 @@ public class Boilerpipe {
 		return content;
 	}
 	
-	public static void main(String[] args) throws Exception{
-		
-		String a = contentFM("http://www.tagesschau.de/xml/tagesschau-meldungen/");
-		System.out.println(a);
-		
-	}
 }
