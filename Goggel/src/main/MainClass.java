@@ -11,20 +11,13 @@ public class MainClass {
 	public static void main(String[] args) throws Exception {
 		
 		
-		//1. RSS-CRAWLER liefert LINKs der RSS-FEED-Newsseiten
-		
-		RSSFeedParser parser = new RSSFeedParser(
-                "http://www.tagesschau.de/xml/tagesschau-meldungen/");
-        Feed feed = parser.readFeed();
-		List<String> linkListeFeedMessages = new LinkedList<String>();
-        for (FeedMessage message : feed.getMessages()) {
-            linkListeFeedMessages.add(message.getGuid());
-        }
-		
-        System.out.println(linkListeFeedMessages);
+		//1. Writer wird erzeugt: Dieser enthält einen RSS-CRAWLER; der liefert LINKs 
+		// der RSS-FEED-Newsseite (hier: tagesschau) und diese wird in Boilerpipe eingeleitet
+		// und es werden im RSSFeedMessageWriter XMLs der einzelnen Dokumente erzeugt
+		// alles in WriteXMLs kombiniert
         
-		//2. Diese Links werden in die Boilerpipe geleitet und der extracted Text rausgeholt
-		
+        WriteXMLs writer = new WriteXMLs();
+        writer.write("http://www.tagesschau.de/xml/tagesschau-meldungen/");
         
 		
 		
@@ -39,8 +32,7 @@ public class MainClass {
 		//5. Lucene verarbeitet XML-DOkumente
 		
 		// TODO Auto-generated method stub
-		Boilerpipe bp = new Boilerpipe();
-	//	System.out.println(bp.contentFM("http://www.tagesschau.de/xml/tagesschau-meldungen/"));
+		
 
 	}
 
