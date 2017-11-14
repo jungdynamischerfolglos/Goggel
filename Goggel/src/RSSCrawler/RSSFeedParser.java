@@ -13,6 +13,7 @@ import javax.xml.stream.events.XMLEvent;
 
 
 public class RSSFeedParser {
+	// Das ist ein Test
     static final String TITLE = "title";
     static final String DESCRIPTION = "description";
     static final String CHANNEL = "channel";
