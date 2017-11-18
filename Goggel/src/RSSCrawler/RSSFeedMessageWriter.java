@@ -18,7 +18,6 @@ import javax.xml.stream.events.XMLEvent;
 
 
 public class RSSFeedMessageWriter{
-
 	
 	private String outputFile;
 	private FeedMessage fm;

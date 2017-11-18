@@ -11,43 +11,38 @@ import java.util.Locale;
 
 public class WriteXMLs {
 
-	public static String generateNameString(int i){
+
+		public static String generateNameString(FeedMessage fm){
+			
+			String s = "" + fm.getDescription().hashCode();
+			return s;
+		}
 		
-		String s;
-		s = new String("Artikel"+i);			
-		i++;
-		return s;
+		
+		public static void write(Feed feed) throws Exception {
+		
+	        
+	        for (FeedMessage message : feed.getMessages()) 
+	        	{
+	        		String nameArtikel = "RSS" + generateNameString(message) +".xml";
+	        		System.out.println(nameArtikel);
+	        		
+	    	        // now write the file        	
+	        		RSSFeedMessageWriter writer = new RSSFeedMessageWriter(message,nameArtikel);
+	                System.out.println(message);
+	                
+	        		//URL der FeedMessage
+	        		String url = message.getGuid();
+	        		System.out.println(url);
+	        		
+	        		//Boilerpipe
+	        		String content = Boilerpipe.contentFM(url);
+	        		System.out.println(content);
+	  
+					writer.writeFM(message, content);
+					
+	        	}
+	    }
+
 	}
-	
-	
-	public static void write(String s) throws Exception {
-	
-    	RSSFeedParser parser = new RSSFeedParser(s);
-        Feed feed = parser.readFeed();
 
-        int i = 0;
-        
-        for (FeedMessage message : feed.getMessages()) 
-        	{
-        	
-        		String nameArtikel = generateNameString(i);
-        		System.out.println(nameArtikel);
-    	        // now write the file        	
-        		RSSFeedMessageWriter writer = new RSSFeedMessageWriter(message, nameArtikel+".xml");
-                System.out.println(message);
-                
-        		//URL der FeedMessage
-        		String url = message.getGuid();
-        		System.out.println(url);
-        		
-        		//Boilerpipe
-        		String content = Boilerpipe.contentFM(url);
-        			System.out.println(content);
-  
-				writer.writeFM(message, content);
-				i++;
-				
-        	}
-    }
-
-}

@@ -24,6 +24,7 @@ public class RSSFeedParser {
     static final String ITEM = "item";
     static final String PUB_DATE = "pubDate";
     static final String GUID = "guid";
+    static final String CATEGORY = "category";
 
     final URL url;
 
@@ -48,6 +49,8 @@ public class RSSFeedParser {
             String author = "";
             String pubdate = "";
             String guid = "";
+            String category = "";
+     
 
             // First create a new XMLInputFactory
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
@@ -75,6 +78,9 @@ public class RSSFeedParser {
                     case DESCRIPTION:
                         description = getCharacterData(event, eventReader);
                         break;
+                    case CATEGORY:
+                        category = getCharacterData(event, eventReader);
+                        break;
                     case LINK:
                         link = getCharacterData(event, eventReader);
                         break;
@@ -99,6 +105,7 @@ public class RSSFeedParser {
                         FeedMessage message = new FeedMessage();
                         message.setAuthor(author);
                         message.setDescription(description);
+                        message.setCategory(category);
                         message.setGuid(guid);
                         message.setLink(link);
                         message.setTitle(title);

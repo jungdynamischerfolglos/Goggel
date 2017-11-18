@@ -8,6 +8,7 @@ public class FeedMessage {
     String link;
     String author;
     String guid;
+    String category;
 
     public String getTitle() {
         return title;
@@ -48,12 +49,21 @@ public class FeedMessage {
     public void setGuid(String guid) {
         this.guid = guid;
     }
+    
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+    
 
     @Override
     public String toString() {
         return "FeedMessage [title=" + title + ", description=" + description
                 + ", link=" + link + ", author=" + author + ", guid=" + guid
-                + "]";
+                + ", category=" + category + "]";
     }
 
 }

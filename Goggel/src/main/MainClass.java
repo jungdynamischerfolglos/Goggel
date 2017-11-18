@@ -5,27 +5,54 @@ import java.util.List;
 
 import boilerpipe.*;
 import RSSCrawler.*;
+import verzeichnisstruktur.*;
 
 public class MainClass {
 
 	public static void main(String[] args) throws Exception {
 		
 		
-		//1. Writer wird erzeugt: Dieser enthält einen RSS-CRAWLER; der liefert LINKs 
-		// der RSS-FEED-Newsseite (hier: tagesschau) und diese wird in Boilerpipe eingeleitet
-		// und es werden im RSSFeedMessageWriter XMLs der einzelnen Dokumente erzeugt
+		//1. Writer wird erzeugt: In diesem wird RSS Crawler aufgerufen; der liefert LINKs 
+		// der RSS-FEED-Newsseite (hier: tagesschau) und diese werden in Boilerpipe eingeleitet
+		// und es werden im RSSFeedMessageWriter XMLs die einzelnen Dokumente dazu erzeugt
 		// alles in WriteXMLs kombiniert
+		WriteXMLs writer = new WriteXMLs();
+		Verzeichnisbaum vzbaum = new Verzeichnisbaum();
+		
+		String[] linkliste = {"http://www.spiegel.de/schlagzeilen/index.rss",
+				"http://rss.kicker.de/news/aktuell",
+				"http://www.wiwo.de/contentexport/feed/rss/schlagzeilen",
+				"https://www.welt.de/feeds/latest.rss"};
+		
+  /*      for(int i=0;i<linkliste.length;i++)
+        {
+        	RSSFeedParser parser = new RSSFeedParser(linkliste[i]);
+        	Feed feed = parser.readFeed();
+        	vzbaum.verzeichnisErstellen(feed);
+        }
+*/		
+		
+		RSSFeedParser parser = new RSSFeedParser(
+                "http://www.tagesschau.de/xml/rss2");
+        Feed feed = parser.readFeed();
+        System.out.println(feed);
         
-        WriteXMLs writer = new WriteXMLs();
-        writer.write("http://www.tagesschau.de/xml/tagesschau-meldungen/");
+        for (FeedMessage message : feed.getMessages()) {
+            System.out.println(message);
+        }
+        
+        writer.write(feed);
+		
+        
+        
+        
+		//2. XML-Dokumente erzeugen und in Verzeichnisstruktur ablegen
+		
+        
         
 		
 		
-		//3. XML-Documente erzeugen und in Verzeichnisstruktur ablegen
-		
-		
-		
-		//4. Gleichzeitig extracted Text in NER-Stanford leiten
+		//3. Gleichzeitig extracted Text in NER-Stanford leiten
 		
 		
 		
