@@ -19,30 +19,16 @@ public class WriteXMLs {
 		}
 		
 		
-		public static void write(Feed feed) throws Exception {
-		
-	        
-	        for (FeedMessage message : feed.getMessages()) 
-	        	{
-	        		String nameArtikel = "RSS" + generateNameString(message) +".xml";
-	        		System.out.println(nameArtikel);
+		public static void write(FeedMessage fm, String content, String path) throws Exception {
+				
+	        		String nameArtikel = path + "RSS" + generateNameString(fm) +".xml";
 	        		
 	    	        // now write the file        	
-	        		RSSFeedMessageWriter writer = new RSSFeedMessageWriter(message,nameArtikel);
-	                System.out.println(message);
-	                
-	        		//URL der FeedMessage
-	        		String url = message.getGuid();
-	        		System.out.println(url);
+	        		RSSFeedMessageWriter writer = new RSSFeedMessageWriter(fm,nameArtikel);
 	        		
-	        		//Boilerpipe
-	        		String content = Boilerpipe.contentFM(url);
-	        		System.out.println(content);
-	  
-					writer.writeFM(message, content);
-					
+					writer.writeFM(fm, content);					
 	        	}
-	    }
+   }
 
-	}
+
 

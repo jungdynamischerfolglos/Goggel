@@ -20,32 +20,19 @@ public class MainClass {
 		Verzeichnisbaum vzbaum = new Verzeichnisbaum();
 		
 		String[] linkliste = {"http://www.spiegel.de/schlagzeilen/index.rss",
-				"http://rss.kicker.de/news/aktuell",
 				"http://www.wiwo.de/contentexport/feed/rss/schlagzeilen",
-				"https://www.welt.de/feeds/latest.rss"};
+				
+				"https://www.stern.de/feed/standard/all/"};
 		
-  /*      for(int i=0;i<linkliste.length;i++)
+        for(int i=0;i<linkliste.length;i++)
         {
         	RSSFeedParser parser = new RSSFeedParser(linkliste[i]);
         	Feed feed = parser.readFeed();
         	vzbaum.verzeichnisErstellen(feed);
         }
-*/		
 		
-		RSSFeedParser parser = new RSSFeedParser(
-                "http://www.tagesschau.de/xml/rss2");
-        Feed feed = parser.readFeed();
-        System.out.println(feed);
-        
-        for (FeedMessage message : feed.getMessages()) {
-            System.out.println(message);
-        }
-        
-        writer.write(feed);
-		
-        
-        
-        
+
+
 		//2. XML-Dokumente erzeugen und in Verzeichnisstruktur ablegen
 		
         
