@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js)"></script>
+	</head>
+	<body>
+		<input name="q" placeholder="Suche..." list="suggest" autocomplete="off" size="100" />
+		<span class="loading"></span>
+		<datalist id="suggest"></datalist>
+		
+		<script>
+			$(function(){
+				var q = $("input[name=q]");
+				var loading = $("span.loading");
+				var list = $("#suggest");
+				
+				var temp = $(q).val();
+				
+				$(q).off().on("keyup", function(){
+					if($(q).val() == temp)
+						return false;
+					
+					$(loading).html('');
+					
+					$.get('data.php', {
+						k: $(q).val()
+					}, function(data){
+						$(loading).html('');
+						
+						$(list).html(data);
+					});
+					temp = $(q).val();
+				});
+			});
+		</script>
+	</body>
+</html>
