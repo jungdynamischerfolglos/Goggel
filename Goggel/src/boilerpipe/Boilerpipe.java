@@ -18,6 +18,7 @@ public class Boilerpipe {
 		final TextDocument doc = new BoilerpipeSAXInput(htmlDoc.toInputSource()).getTextDocument();
 		String content = CommonExtractors.ARTICLE_EXTRACTOR.getText(doc);
 		return content;
+		
 	}
 	
 }
