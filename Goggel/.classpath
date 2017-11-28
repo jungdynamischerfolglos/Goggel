@@ -8,5 +8,10 @@
 	<classpathentry kind="lib" path="C:/Users/Markus.Hoffrogge/Downloads/boilerpipe-1.2.0-bin (1)/boilerpipe-1.2.0/boilerpipe-1.2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Markus.Hoffrogge/Downloads/boilerpipe-1.2.0-bin (1)/boilerpipe-1.2.0/lib/xerces-2.9.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Markus.Hoffrogge/Downloads/boilerpipe-1.2.0-bin (1)/boilerpipe-1.2.0/lib/nekohtml-1.9.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Markus.Hoffrogge/Downloads/stanford-german-corenlp-2017-06-09-models.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Markus.Hoffrogge/Downloads/stanford-corenlp-full-2017-06-09/stanford-corenlp-full-2017-06-09/stanford-corenlp-3.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Markus.Hoffrogge/Downloads/stanford-corenlp-full-2017-06-09/stanford-corenlp-full-2017-06-09/stanford-corenlp-3.8.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Markus.Hoffrogge/Downloads/stanford-corenlp-full-2017-06-09/stanford-corenlp-full-2017-06-09/stanford-corenlp-3.8.0-models.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Markus.Hoffrogge/Downloads/stanford-corenlp-full-2017-06-09/stanford-corenlp-full-2017-06-09/stanford-corenlp-3.8.0-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,10 +1,7 @@
 package boilerpipe;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
  
-
 import de.l3s.boilerpipe.document.TextDocument;
 import de.l3s.boilerpipe.extractors.CommonExtractors;
 import de.l3s.boilerpipe.sax.BoilerpipeSAXInput;
