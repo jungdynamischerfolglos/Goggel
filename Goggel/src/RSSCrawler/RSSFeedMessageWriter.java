@@ -1,10 +1,6 @@
 package RSSCrawler;
 
 import java.io.FileOutputStream;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
 import javax.xml.stream.XMLEventFactory;
 import javax.xml.stream.XMLEventWriter;
 import javax.xml.stream.XMLOutputFactory;
@@ -20,10 +16,10 @@ import javax.xml.stream.events.XMLEvent;
 public class RSSFeedMessageWriter{
 	
 	private String outputFile;
-	private FeedMessage fm;
+//	private FeedMessage fm;
 
     public RSSFeedMessageWriter(FeedMessage fm, String outputFile) {
-        this.fm= fm;
+//        this.fm= fm;
         this.outputFile = outputFile;
     }
 	

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+
+<channel>
+	<title>Sicherheitslücke auf Macs: Apple kündigt Software-Update an</title>
+	<description>In Apples aktuellem Betriebssystem für Mac-Computer kann der Passwortschutz binnen Sekunden ausgehebelt werden. Das Unternehmen reagiert: "Wir arbeiten an einem Software-Update, um das Problem anzugehen."</description>
+	<link>http://www.spiegel.de/netzwelt/netzpolitik/sicherheitsluecke-auf-macs-apple-kuendigt-software-update-an-a-1180810.html#ref=rss</link>
+	<language>Unbekannt</language>
+	<copyright>http://www.spiegel.de/netzwelt/netzpolitik/sicherheitsluecke-auf-macs-apple-kuendigt-software-update-an-a-1180810.html</copyright>
+	<extractedText>3. Und bitte Apple: Auch das automatische An- &amp; Ausschalten beheben.
+Seit High Sierra schaltet sich mein Mac im Ruhemodus gerne vorzugsweise die ganze Nacht, aber auch tagsüber aus und dann wieder an. Das stört meine Nachtruhe. Klar, man kann den Rechner auch ganz runterfahren, doch warum gibt es [...]
+Seit High Sierra schaltet sich mein Mac im Ruhemodus gerne vorzugsweise die ganze Nacht, aber auch tagsüber aus und dann wieder an. Das stört meine Nachtruhe. Klar, man kann den Rechner auch ganz runterfahren, doch warum gibt es den Ruhemodus, wenn der mich um meine bringt?
+4. Late Adopter
+Late Adopter sei Dank! Als User verschiedener Spezialsoftwares bin ich von "Natur" aus Late Adopter, hat mir schon oft den Allerwertesten gerettet. Wer mittlerweile am ersten Releasetag mit auf den Zug springt, nimmt am [...]
+Late Adopter sei Dank! Als User verschiedener Spezialsoftwares bin ich von "Natur" aus Late Adopter, hat mir schon oft den Allerwertesten gerettet. Wer mittlerweile am ersten Releasetag mit auf den Zug springt, nimmt am "öffentlichen Groß-Beta-Test" teil, ob er/sie will, oder nicht. Hatte grad letzte Woche mal wieder geschaut, ob meine Software mittlerweile von High Sierra unterstützt wird, gottseidank fehlte noch ein Hersteller, der sein Produkt noch nicht für HS freigegeben hat... :oP VG JT
+5. @Konstruktor
+Es stellt haargenau die richtige Vorgehensweise dar, wenn ein Exploit in die Öffentlichkeit getragen wird, denn es hat drei entscheidende Vorteile: - Der Hersteller wird gezwungen, etwas dagegen zu unternehmen; - Der User [...]
+Es stellt haargenau die richtige Vorgehensweise dar, wenn ein Exploit in die Öffentlichkeit getragen wird, denn es hat drei entscheidende Vorteile: - Der Hersteller wird gezwungen, etwas dagegen zu unternehmen; - Der User erfährt von der Sicherheitslücke und kann sie ggf. selber schließen (siehe in diesem Bsp. setzen eines root Passworts); - Dadurch wird der User in die glückliche Lage versetzt, sich eingehender mit dem Thema "Wie funktioniert eigentlich mein PC WIRKLICH?" auseinanderzusetzen; Gerade Punkt 1: Wäre der Exploit vertraulich an den Hersteller/Entwickler kommuniziert, statt in die Öffentlichkeit getragen worden, neigten doch viele Hersteller/Entwickler dazu, solche Lücken zu vertuschen, bzw. die Schließung der Lücke zu verzögern.  Veröffentlichung ist der beste Weg, mit so etwas umzugehen.  VG JT
+</extractedText>
+
+</channel>
+</rss>

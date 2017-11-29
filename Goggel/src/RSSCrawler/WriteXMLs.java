@@ -1,14 +1,5 @@
 package RSSCrawler;
 
-import boilerpipe.*;
-import verzeichnisstruktur.*;
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Locale;
-
 public class WriteXMLs {
 
 

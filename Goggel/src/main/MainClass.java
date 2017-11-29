@@ -1,6 +1,10 @@
 package main;
 
+import RSSCrawler.Feed;
+import RSSCrawler.RSSFeedParser;
+import RSSCrawler.WriteXMLs;
 import boilerpipe.*;
+import verzeichnisstruktur.Verzeichnisbaum;
 
 public class MainClass {
 
@@ -13,21 +17,21 @@ public class MainClass {
 		// der RSS-FEED-Newsseite (hier: tagesschau) und diese werden in Boilerpipe eingeleitet
 		// und es werden im RSSFeedMessageWriter XMLs die einzelnen Dokumente dazu erzeugt
 		// alles in WriteXMLs kombiniert
-//		WriteXMLs writer = new WriteXMLs();
-//		Verzeichnisbaum vzbaum = new Verzeichnisbaum();
-//		
-//		String[] linkliste = {"http://www.spiegel.de/schlagzeilen/index.rss",
-//				"http://www.wiwo.de/contentexport/feed/rss/schlagzeilen",
-//				
-//				"https://www.stern.de/feed/standard/all/"};
-//		
-//        for(int i=0;i<linkliste.length;i++)
-//        {
-//        	RSSFeedParser parser = new RSSFeedParser(linkliste[i]);
-//        	Feed feed = parser.readFeed();
-//        	vzbaum.verzeichnisErstellen(feed);
-//        }
-//		
+		WriteXMLs writer = new WriteXMLs();
+		Verzeichnisbaum vzbaum = new Verzeichnisbaum();
+		
+		String[] linkliste = {"http://www.spiegel.de/schlagzeilen/index.rss",
+				"http://www.wiwo.de/contentexport/feed/rss/schlagzeilen",
+				
+				"https://www.stern.de/feed/standard/all/"};
+		
+        for(int i=0;i<linkliste.length;i++)
+        {
+        	RSSFeedParser parser = new RSSFeedParser(linkliste[i]);
+        	Feed feed = parser.readFeed();
+        	vzbaum.verzeichnisErstellen(feed);
+        }
+		
 
 
 		//2. XML-Dokumente erzeugen und in Verzeichnisstruktur ablegen

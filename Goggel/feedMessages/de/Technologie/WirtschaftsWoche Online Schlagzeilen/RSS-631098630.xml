@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+
+<channel>
+	<title>Apple: Software-Update wegen Sicherheitslücke auf Macs</title>
+	<description>Apple wirbt mit einem Fokus auf Datenschutz und Sicherheit auf seinen Geräten - nun muss das Unternehmen einen Fehler auf dem Mac-Betriebssystem ausbessern. Über einen Root-Account kann sich jeder Zugriff verschaffen.</description>
+	<link>http://www.wiwo.de/technologie/apple-software-update-wegen-sicherheitsluecke-auf-macs/20644664.html</link>
+	<language>Unbekannt</language>
+	<copyright>http://www.wiwo.de/technologie/apple-software-update-wegen-sicherheitsluecke-auf-macs/20644664.html</copyright>
+	<extractedText> Apple: Software-Update wegen Sicherheitslücke auf Macs
+Apple: Software-Update wegen Sicherheitslücke auf Macs
+29. November 2017
+Ein Laden des Mac-Herstellers in San Francisco
+Bild:  AP
+Quelle: Handelsblatt Online
+Apple wirbt mit einem Fokus auf Datenschutz und Sicherheit auf seinen Geräten - nun muss das Unternehmen einen Fehler auf dem Mac-Betriebssystem ausbessern. Über einen Root-Account kann sich jeder Zugriff verschaffen.
+Apple will einen Fehler in seinem aktuellen Betriebssystem für Mac-Computer ausbessern, durch den der Passwort-Schutz ausgehebelt werden kann. Ein Computer-Experte wies den Konzern am Dienstag per Twitter darauf hin, dass sich jeder mit einem sogenannten Root-Account für Änderungen am System in die Computer einloggen könne.
+Dazu reiche es an Rechnern mit dem MacOS-System „High Sierra“ aus, den Benutzernamen „root“ zu wählen, kein Passwort einzugeben und mehrfach den Login-Knopf zu drücken.
+Anzeige
+„Wir arbeiten an einem Software-Update, um das Problem anzugehen“, erklärte Apple dazu in einer Stellungnahme. In der Zwischenzeit empfahl der Konzern den Nutzern, ein Passwort für den Root-Account zu setzen. Über den Zugriff kann man System-Einstellungen verändern - so könnte über ihn zum Beispiel eine schützende Firewall deaktiviert werden.
+Ein Fehler dieser Art ist ein blaues Auge für Apple, denn der Konzern wirbt mit einem besonderen Augenmerk auf Datenschutz und Sicherheit auf seinen Geräten. Zunächst blieb unklar, wie es zu der Sicherheitslücke kommen konnte.
+</extractedText>
+
+</channel>
+</rss>
