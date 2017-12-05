@@ -10,9 +10,9 @@ public class MainClass {
 
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws Exception {
-		Boilerpipe pipe = new Boilerpipe();
-		System.out.println(pipe.contentFM("http://www.tagesschau.de/wirtschaft/schlecker-urteile-101.html"));
-		
+//		Boilerpipe pipe = new Boilerpipe();
+//		System.out.println(pipe.contentFM("http://www.tagesschau.de/wirtschaft/schlecker-urteile-101.html"));
+//		
 		//1. Writer wird erzeugt: In diesem wird RSS Crawler aufgerufen; der liefert LINKs 
 		// der RSS-FEED-Newsseite (hier: tagesschau) und diese werden in Boilerpipe eingeleitet
 		// und es werden im RSSFeedMessageWriter XMLs die einzelnen Dokumente dazu erzeugt
